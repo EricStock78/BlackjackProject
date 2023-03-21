@@ -1,3 +1,4 @@
+import db
 
 def Display_Card(card):
     print(card[0])
@@ -6,7 +7,8 @@ def Display_Card(card):
 
 def main():
     print("Blackjack Project")
-
+    money = db.load_money_from_disk();
+    print(f"I have {money} dollars")
 
 
     card = ["Hearts", "Ace", 11];
